@@ -1,0 +1,10 @@
+<%- include('pageMeta.pagePath+ 'include/_footer',{meta:pageMeta}) %>
+<%
+    const pageMeta ={
+        pageId:'top',
+        title:'My portfolio',
+        description:'hayuse's portfolio',
+        pagePath:'.',
+        sorcePath:'.'
+    }
+%>
