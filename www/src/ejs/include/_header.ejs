@@ -9,11 +9,33 @@
     <%}else{ %>
         <title><%= meta.title %>| hayuse's portfolio</title>
     <% } %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+Display:wght@100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Noto Serif Display', serif; -->
+
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="<%= meta.sorcePath%>/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<%= meta.sorcePath %>/assets/css/style.css" type="text/css">
     
 </head>
 <body>
     <header>
-        
+        <div id="humberger">
+            <span class="hum_top"></span>
+            <span class="hum_mid"></span>
+            <span class="hum_bot"></span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="<%= meta.sorcePath %>/index.html">Home</a></li>
+                <li><a href="<%= meta.sorcePath %>/index.html">Videos</a></li>
+                <li><a href="<%= meta.sorcePath %>/index.html">Graphics</a></li>
+                <li><a href="<%= meta.sorcePath %>/index.html">Project</a></li>
+                <li><a href="<%= meta.sorcePath %>/index.html">Profile</a></li>
+                <li><a href="<%= meta.sorcePath %>/index.html">Contact</a></li>
+            </ul>
+        </div>
     </header>

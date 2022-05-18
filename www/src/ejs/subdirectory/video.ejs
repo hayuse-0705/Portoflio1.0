@@ -1,0 +1,50 @@
+<%
+    const pageMeta ={
+        pageId:'top',
+        title:'Videos',
+        description:'hayuse portfolio',
+        pagePath:'..',
+        sorcePath:'..'
+    }
+%>
+
+<%- include (pageMeta.pagePath + "/include/_header",{meta:pageMeta}) %>
+<div id="video-visual">
+    <div class="slider-for">
+        <div class="slide-item">
+            <p class="slide-item-num">No.1</p>
+            <p class="slide-item-title">動画で覚える配色トーン</p>
+            <div class="slide-item-frame">
+                <div class="slide-item-video">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/m23yS9vheOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="slide-item-point">testtexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttexttesttext</p>
+            <div class="slide-item-details">
+                <p><span>制作時間：</span>3日</p>
+                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            </div>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-eEkaGwEXZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kykvOGTKXV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bV_FozB3YMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+    <div class="slider-nav">
+        <div >1</div>
+        <div>
+           2 
+        </div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</div>
+
+<%- include (pageMeta.pagePath + "/include/_footer",{meta:pageMeta}) %>
+
