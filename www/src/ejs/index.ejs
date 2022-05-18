@@ -1,0 +1,14 @@
+<%
+    const pageMeta ={
+        pageId:'top',
+        title:'My portfolio',
+        description:'hayuse portfolio',
+        pagePath:'.',
+        sorcePath:'.'
+    }
+%>
+
+<%- include (pageMeta.pagePath + "/include/_header",{meta:pageMeta}) %>
+
+
+<%- include (pageMeta.pagePath + "/include/_footer",{meta:pageMeta}) %>
