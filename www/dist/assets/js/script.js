@@ -30,3 +30,15 @@ $('#humberger').on('click', function(){
     }
 });
 
+$(function () {
+  $(".slick-arrow").click(function () {
+    videoControl("pauseVideo");
+    function videoControl(action) {
+      var $playerWindow = $("iframe")[0].contentWindow;
+      $playerWindow.postMessage(
+        '{"event":"command","func":"' + action + '","args":""}',
+        "*"
+      );
+    }
+  });
+});
