@@ -44,3 +44,48 @@
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   }
 }
+.text-random-op {
+  animation-name: text-random-op;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-random-op {
+  0% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
