@@ -46,46 +46,202 @@
 }
 .text-random-op {
   animation-name: text-random-op;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
 @keyframes text-random-op {
   0% {
-    opacity: 0.7;
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
   }
   20% {
-    opacity: 1;
+    text-shadow: 10px 8px 3px rgba(0, 0, 0, 0.1);
   }
   30% {
-    opacity: 0.7;
+    text-shadow: 8px 12px 3px rgba(0, 0, 0, 0.05);
   }
   35% {
-    opacity: 1;
+    text-shadow: 12px 10px 3px rgba(0, 0, 0, 0.15);
   }
   40% {
-    opacity: 0.8;
+    text-shadow: 8px 13px 3px rgba(0, 0, 0, 0.1);
   }
   55% {
-    opacity: 1;
+    text-shadow: 8px 10px 3px rgba(0, 0, 0, 0.1);
   }
   60% {
-    opacity: 0.8;
+    text-shadow: 9px 10px 3px rgba(0, 0, 0, 0.15);
   }
   70% {
-    opacity: 1;
+    text-shadow: 10px 12px 3px rgba(0, 0, 0, 0.05);
   }
   85% {
-    opacity: 0.9;
+    text-shadow: 7px 9px 3px rgba(0, 0, 0, 0.15);
   }
   90% {
-    opacity: 1;
+    text-shadow: 9px 12px 3px rgba(0, 0, 0, 0.1);
   }
   93% {
+    text-shadow: 8px 10px 3px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    text-shadow: 12px 10px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+.box-random-op {
+  animation-name: box-random-op;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box-random-op {
+  0% {
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+  }
+  20% {
+    box-shadow: 10px 8px 3px rgba(0, 0, 0, 0.1);
+  }
+  30% {
+    box-shadow: 8px 12px 3px rgba(0, 0, 0, 0.05);
+  }
+  35% {
+    box-shadow: 12px 10px 3px rgba(0, 0, 0, 0.15);
+  }
+  40% {
+    box-shadow: 8px 13px 3px rgba(0, 0, 0, 0.1);
+  }
+  55% {
+    box-shadow: 8px 10px 3px rgba(0, 0, 0, 0.1);
+  }
+  60% {
+    box-shadow: 9px 10px 3px rgba(0, 0, 0, 0.15);
+  }
+  70% {
+    box-shadow: 10px 12px 3px rgba(0, 0, 0, 0.05);
+  }
+  85% {
+    box-shadow: 7px 9px 3px rgba(0, 0, 0, 0.15);
+  }
+  90% {
+    box-shadow: 9px 12px 3px rgba(0, 0, 0, 0.1);
+  }
+  93% {
+    box-shadow: 8px 10px 3px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    box-shadow: 12px 10px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+.text-load-sub {
+  animation-name: text-load-sub;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-load-sub {
+  0% {
     opacity: 0;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
   100% {
     opacity: 1;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+.box-load-sub {
+  animation-name: box-load-sub;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box-load-sub {
+  0% {
+    opacity: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -120%);
+  }
+}
+.text-out {
+  animation-name: text-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-out {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
+.box-out {
+  animation-name: box-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box-out {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
 }

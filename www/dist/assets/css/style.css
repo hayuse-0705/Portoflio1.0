@@ -2,6 +2,10 @@
 @import url("./slick.css");
 @import url("./video.css");
 @import url("./graphics.css");
+html {
+  scroll-behavior: smooth;
+}
+
 body, p, a, div, li {
   margin: 0px;
   padding: 0px;
@@ -126,6 +130,7 @@ body {
   padding: 10px 20px;
   left: 50%;
   transform: translate(-50%, 80%);
+  transition: 0.3s;
 }
 
 .graphics-link:hover {
