@@ -2,6 +2,8 @@
 @import url("./slick.css");
 @import url("./video.css");
 @import url("./graphics.css");
+@import url("./project.css");
+@import url("./profile.css");
 html {
   scroll-behavior: smooth;
 }
@@ -201,7 +203,6 @@ body {
   right: 5%;
   z-index: 99;
   text-align: center;
-  background-color: #fff;
   padding: 20px 100px;
   z-index: 0;
   transition: 0.5s;

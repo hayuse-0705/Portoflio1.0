@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+        <!--font-family: 'New Tegomin', serif;-->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+        <title>count_down</title> 
+
+    </head>
+    <body id="change">
+        <img id="toi_img" src="image/問題１_本編.png" alt="">
+        <video id="fail_video" src="./image/問１不正解.mp4"></video>
+        <audio id="audio" preload="auto">
+            <source src="./audio/himei.mp3" type="audio/mp3">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="suc_bgm" preload="auto">
+            <source src="./audio/suc_bgm.mp3" type="audio/mp3">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="bgm" preload="auto">
+            <source src="./audio/n80.mp3" type="audio/mp3">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="btn_audio" preload="auto">
+            <source src="./audio/btn02.mp3" type="audio/mp3">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="clear_audio" preload="auto">
+            <source src="./audio/btn03.mp3" type="audio/mp3">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="fail_audio" preload="auto">
+            <source src="./audio/fail.wav" type="audio/wav">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="last_count" preload="auto">
+            <source src="./audio/count_last.mp3" type="audio/mp3">
+            <p>再生エラー</p>
+        </audio>
+        <audio id="warai_audio" preload="auto">
+            <source src="./audio/suc_warai.wav" type="audio/wav">
+            <p>再生エラー</p>
+        </audio>
+        <div class="firstpage">
+            <div id="startbtn"><p>謎解きスタート</p></div>
+        </div>
+        <div id="mainpage">
+            <!--
+            <div class="page_btn_left" onclick="page_slide_back()">
+                <p>&lt;</p>
+            </div>
+            <div class="page_btn_right" onclick="page_slide_next()">
+                <p>&gt;</p>
+            </div>
+            -->
+            <div class="question">
+                <p id="main_question"></p>
+            </div>
+            <div class="count">
+                <h1 id='count'>60</h1>
+            </div>
+            <div id="answer_all">
+                <p id="answer_1"></p>
+                <p id="answer_2"></p>
+                <p id="answer_3"></p>
+                <p id="answer_4"></p>
+                <p id="answer_5"></p>
+            </div>
+            <div id="hint"><p>Hint:ここで消えたものたちの目線。</p></div>
+            <div id="key_all">
+                <div class="keysort">
+                    <div id="clear" onclick="clear_text()">クリア</div>
+                    <div id="enter" onclick="enter()">回答する</div>
+                </div>
+                <table>
+                    <tr>
+                        <th class="key" onclick="input_key('わ')">わ</th>
+                        <th class="key" onclick="input_key('ら')">ら</th>
+                        <th class="key" onclick="input_key('や')">や</th>
+                        <th class="key" onclick="input_key('ま')">ま</th>
+                        <th class="key" onclick="input_key('は')">は</th>
+                        <th class="key" onclick="input_key('な')">な</th>
+                        <th class="key" onclick="input_key('た')">た</th>
+                        <th class="key" onclick="input_key('さ')">さ</th>
+                        <th class="key" onclick="input_key('か')">か</th>
+                        <th class="key" onclick="input_key('あ')">あ</th>
+                    </tr>
+                    <tr>
+                        <th class="key" onclick="input_key('を')">を</th>
+                        <th class="key" onclick="input_key('り')">り</th>
+                        <th class="key" onclick="input_key('')"></th>
+                        <th class="key" onclick="input_key('み')">み</th>
+                        <th class="key" onclick="input_key('ひ')">ひ</th>
+                        <th class="key" onclick="input_key('に')">に</th>
+                        <th class="key" onclick="input_key('ち')">ち</th>
+                        <th class="key" onclick="input_key('し')">し</th>
+                        <th class="key" onclick="input_key('き')">き</th>
+                        <th class="key" onclick="input_key('い')">い</th>
+                    </tr>
+                    <tr>
+                        <th class="key" onclick="input_key('ん')">ん</th>
+                        <th class="key" onclick="input_key('る')">る</th>
+                        <th class="key" onclick="input_key('ゆ')">ゆ</th>
+                        <th class="key" onclick="input_key('む')">む</th>
+                        <th class="key" onclick="input_key('ふ')">ふ</th>
+                        <th class="key" onclick="input_key('ぬ')">ぬ</th>
+                        <th class="key" onclick="input_key('つ')">つ</th>
+                        <th class="key" onclick="input_key('す')">す</th>
+                        <th class="key" onclick="input_key('く')">く</th>
+                        <th class="key" onclick="input_key('う')">う</th>
+                    </tr>
+                    <tr>
+                        <th class="key" onclick="input_key('ー')">ー</th>
+                        <th class="key" onclick="input_key('れ')">れ</th>
+                        <th class="key" onclick="input_key('')"></th>
+                        <th class="key" onclick="input_key('め')">め</th>
+                        <th class="key" onclick="input_key('へ')">へ</th>
+                        <th class="key" onclick="input_key('ね')">ね</th>
+                        <th class="key" onclick="input_key('て')">て</th>
+                        <th class="key" onclick="input_key('せ')">せ</th>
+                        <th class="key" onclick="input_key('け')">け</th>
+                        <th class="key" onclick="input_key('え')">え</th>
+                    </tr>
+                    <tr>
+                        <th class="key" onclick="input_key('”')">”</th>
+                        <th class="key" onclick="input_key('ろ')">ろ</th>
+                        <th class="key" onclick="input_key('よ')">よ</th>
+                        <th class="key" onclick="input_key('も')">も</th>
+                        <th class="key" onclick="input_key('ほ')">ほ</th>
+                        <th class="key" onclick="input_key('の')">の</th>
+                        <th class="key" onclick="input_key('と')">と</th>
+                        <th class="key" onclick="input_key('そ')">そ</th>
+                        <th class="key" onclick="input_key('こ')">こ</th>
+                        <th class="key" onclick="input_key('お')">お</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="./js/script.js"></script>
+</html>
