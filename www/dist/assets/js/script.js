@@ -74,3 +74,20 @@ $("a").on('click',function(event){
   }
   setTimeout(action,1000);
 });
+
+$(".video-start").hover(
+  function(){
+    $("#gallery-back-video").attr("src","./assets/video/videos.mp4");
+  },
+  function(){
+    $("#gallery-back-video").attr("src","");
+  }
+);
+$(".graphic-start").hover(
+  function(){
+    $("#gallery-back-video").attr("src","./assets/video/graphic.mp4");
+  },
+  function(){
+    $("#gallery-back-video").attr("src","");
+  }
+);
