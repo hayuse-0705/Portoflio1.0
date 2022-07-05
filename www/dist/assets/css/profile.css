@@ -1,15 +1,18 @@
 #profile-section {
   width: 80%;
   max-width: 1000px;
-  margin: 100px auto;
+  position: relative;
+  left: 23%;
   padding-top: 100px;
+}
+
+#profile-section p {
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .profile-item {
   margin: 50px 0;
-  display: flex;
   gap: 100px;
-  align-items: center;
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -17,24 +20,42 @@
   font-size: 1.2rem;
   font-style: italic;
   position: relative;
-}
-
-.date::before {
-  content: "";
-  height: 1px;
-  background-color: #5f5f5f;
-  width: 100%;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  bottom: 0%;
+  text-align: left;
 }
 
 .profile-item-right {
   position: relative;
+  display: flex;
+  gap: 20px;
+  width: 95%;
 }
 
 .profile-item-content {
   text-align: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-history-img {
+  width: 40%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-history-video {
+  width: 40%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #profile-title {
@@ -43,6 +64,13 @@
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   font-weight: 800;
   text-align: left;
+  position: relative;
+  z-index: 100;
+}
+
+#profile-title span {
+  font-size: 6rem;
+  font-weight: 500;
 }
 
 .profile-sub-title {
@@ -56,4 +84,171 @@
   text-align: left;
   font-weight: bold;
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.proile-detail {
+  position: relative;
+  width: 100%;
+}
+
+.img-profile {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0%;
+}
+
+.profile-detail {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  overflow: auto;
+  width: 20%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.profile-detail::before {
+  content: "";
+  background-color: #3d3d3d;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+  width: 70%;
+  height: 100vh;
+}
+
+.profile-hobby {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.profile-hobby ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 20%;
+}
+
+.profile-hobby ul li {
+  margin: 10px 0;
+  text-align: left;
+  position: relative;
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+}
+
+.profile-hobby ul li p {
+  font-size: 0.5rem;
+  position: relative;
+}
+
+.profile-hobby ul li::before {
+  content: "";
+  border: 1px solid #5f5f5f;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.profile-hobby h2 {
+  text-align: left;
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.profile-hobby h2 span {
+  font-size: 2rem;
+}
+
+.profile-hobby h2::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 50%;
+  background-color: #3d3d3d;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+.profile-skills {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-skills ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 10%;
+}
+
+.profile-skills ul li {
+  margin: 10px 0;
+  text-align: left;
+  position: relative;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+}
+
+.profile-skills ul li p {
+  font-size: 0.5rem;
+  position: relative;
+}
+
+.profile-skills ul li p::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #3d3d3d;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+.profile-skills ul li::before {
+  content: "";
+  border: 1px solid #5f5f5f;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.profile-skills h2 {
+  text-align: left;
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.profile-skills h2 span {
+  font-size: 2rem;
+}
+
+.profile-skills h2::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 50%;
+  background-color: #3d3d3d;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
 }

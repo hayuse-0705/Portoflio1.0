@@ -9,8 +9,31 @@
 %>
 
 <%- include (pageMeta.pagePath + "/include/_header",{meta:pageMeta}) %>
+<div class="profile-detail">
+    <h1 id="profile-title"><span>P</span>rofile</h1>
+    <img class="img-profile" src="../assets/img/IMG_0851.JPG" alt="">
+    <div class="profile-hobby">
+        <h2><span>H</span>obby</h2>
+        <ul>
+            <li>動画編集</li>
+            <li>ギター</li>
+            <li>部屋作り</li>
+            <li>音響</li>
+        </ul>
+    </div>
+    <div class="profile-skills">
+        <h2><span>S</span>kills</h2>
+        <ul>
+            <li>動画制作<p>Ae Pr DavinciResolve</p></li>
+            <li>音楽制作<p>Garage Band Studio One5</p></li>
+            <li>デザイン<p>Ai Ps XD</p></li>
+            <li>コーディング<p>html css javascript</p></li>
+            <li>プログラミング<p>javascript c++ (C)</p></li>
+        </ul>
+    </div>
+</div>
+
 <section id="profile-section">
-    <p id="profile-title">Profile</p>
     <p class="profile-sub-title">hayuse's story</p>
     <p class="profile-sub-title-ja">苅田玻優世ができるまで、、、</p>
     <div class="profile-item">
@@ -19,6 +42,7 @@
         </div>
         <div class="profile-item-right">
             <p class="profile-item-content">体重４０００gの巨体で誕生。家で生まれたので正真正銘生まれも育ちも我が家。（だから多分家が好きすぎて保育園まともに行かなかった。）</p>
+            <img src="../assets/img/akiyoshi1.jpg" alt="" class="profile-history-img">
         </div>
     </div>
     <div class="profile-item">
@@ -26,6 +50,7 @@
             <p class="date">5.old</p>
         </div>
         <div class="profile-item-right">
+            <img src="../assets/img/DSC05306 (2).jpg" alt="" class="profile-history-img">
             <p class="profile-item-content">当時遊戯王にハマっていたことから段ボールでデュエルディスクを制作。（旧型のものから比較的新しめのものまで）</p>
         </div>
     </div>
@@ -48,20 +73,32 @@
             <p class="date">12.old</p>
         </div>
         <div class="profile-item-right">
-            <p class="profile-item-content">パソコンでゲームをするようになり、youtubeのゲーム実況に憧れで自分も編集してYoutubeに動画を投稿し始める。３ヶ月で５００人の登録者を獲得。機械音声を使った実況が主だったが、思い切ってやってみた生声の動画は自分のトーク力がなさすぎてただの黒歴史になったため抹消。</p>
+            <p class="profile-item-content">パソコンでゲームをするようになり、youtubeのゲーム実況に憧れで自分も編集してYoutubeに動画を投稿し始める。３ヶ月で５００人の登録者を獲得。機械音声を使った実況が主だったが、思い切ってやってみた生声の動画は自分のトーク力がなさすぎてただの黒歴史になったため抹消。このころから動画編集に興味を持ち、いくつか文字のみのMVを作ったりしていた。</p>
+            
+        </div>
+        <div class="profile-item-right">
+            <video src="../assets/video/ケッペキショウ.mp4" controls class="profile-history-video"></video>
+            <video src="../assets/video/チルドレンレコードPV自作.mp4" controls class="profile-history-video"></video>
+        </div>
+        <div class="profile-item-right">
+            <video src="../assets/video/ロストワンの号哭自作PV.mp4" controls class="profile-history-video"></video>
+            <video src="../assets/video/六兆年と一夜物語自作PV.mp4" controls class="profile-history-video"></video>
         </div>
     </div>
     <div class="profile-item">
         <p class="date">13.old</p>
         <div class="profile-item-right">
+            
             <p class="profile-item-content">中学校野球部に所属。部活との両立が厳しかったためYoutube投稿が不定期に。ただ部活自体は人数が少なかったため特に面白くもなく、当時は友達とゲームをすることにハマっていた。ちょっとした大会にも参加したりとハマり方は結構なもの。</p>
         </div>
     </div>
     <div class="profile-item">
         <p class="date">14.old</p>
         <div class="profile-item-right">
+            <video src="../assets/video/エンディング.mp4" controls class="profile-history-video"></video>
             <p class="profile-item-content">文化祭でCM制作を頼まれる。「彼は中学２年生ではない」と大絶賛。動画制作はフリー編集ソフトで有名なAviutlで作成。お気に入りの編集はカメラ制御と矢印。自分のお小遣いでペンタブも購入。ちょっとデジタル絵に挑戦するが、ネットに溢れる天才たちと自分のギャップに耐えきれず一旦断念。</p>
         </div>
+        
     </div>
     <div class="profile-item">
         <p class="date">15.old</p>
@@ -70,11 +107,17 @@
                 この年も文化祭のCM制作を頼まれる。動画の方がみんなの反応が良くて面白いと感じた。この頃Blenderでちょっとしたモデリングにハマる。ペンタブを使ったイラストに再挑戦。この時俺は線がより塗りの方が好きなんだ！と何故か思っていた。
             </p>
         </div>
+        <div class="proffile-item-right">
+            <video src="../assets/video/CM.mp4" controls class="profile-history-video"></video>
+            <video src="../assets/video/エンディング１.mp4" controls class="profile-history-video"></video>
+        </div>
     </div>
     <div class="profile-item">
         <p class="date">16.old</p>
         <div class="profile-item-right">
+            <video src="../assets/video/h30岡工祭　情報技術科１年　宣伝動画.mp4" controls class="profile-history-video"></video>
             <p class="profile-item-content">工業高校の情報技術科に入学。マイコン同好会に入ってマイコンのプログラミングを学ぶ。文化祭の学年の出し物のCMが全校でバカウケ。が内容が釣り合わず評判は良くはなかった。文化祭の全大会の動画を作りたいと思い後期に生徒会に入部。</p>
+            
         </div>
 
     </div>
@@ -82,12 +125,17 @@
         <p class="date">17.old</p>
         <div class="profile-item-right">
             <p class="profile-item-content">全国ものづくりコンテストに向けて毎日夜9時までプログラミングとはんだごて漬け。が、当初の予定と1日づれたため、この年のものづくりコンテストは趣味で行っている全日本合気道演舞会と日程がだだ被り。まぁ来年もあるとまたプログラミング漬けの日々に。この年の文化祭の前大会の企画準備、動画の制作をほとんど担当。動画も大絶賛だったが、企画の教材提示装置イラスト伝言ゲームはさながらテレビ番組のようだと大絶賛。タイトルコールから台本の基礎部分をほんとんど制作＆書き下ろし。</p>
+            <video src="../assets/video/R1_OPC_Movie.mp4" controls class="profile-history-video"></video>
         </div>
     </div>
     <div class="profile-item">
         <p class="date">18.old</p>
         <div class="profile-item-right">
+            <video src="../assets/video/情報技術科VOS.mp4" controls class="profile-history-video"></video>
             <p class="profile-item-content">全国ものづくりコンテストに向けて１年と半年練習してきたがコロナで中止。去年行っておけばと大後悔。文化祭は一応できたが、準備期間そもそも登校の日がなかなかなく、コロナによる縛りも増え、３徹で準備したものの、去年ほどの完成度は出ず。課題研究のR６Sというゲームのドローン制作が唯一の拠り所。３Dプリンターで土台を作り基盤制作から中のソフト制作までを行った。カメラ機能、ジャンプ機能をつけたかったがwifiのカメラ通信が難しく時間が足りず断念。結果ドローン本体とスマートフォンをwifiで接続し仮想ジョイコンで操作するのみに。</p>
+        </div>
+        <div class="profifle-item-rigtht">
+            <video src="../assets/video/R2OPC映像.mp4" controls class="profile-history-video"></video>
         </div>
     </div>
     <div class="profile-item">
@@ -95,6 +143,7 @@
         <div class="profile-item-right">
             <p class="profile-item-content">OICに入学。動画編集はもともとしてはいたもののフリーのソフトばかりだったのでAdobeのソフトに初めて触れる。夏休みに３Dプリンターでスマホスタンドを書き出して制作したり、自分の部屋の机を自分の高さに合わせて０から制作したりした。祖父から昔のパソコンをもらったので自分でLinuxOSのUBUNTUを入れてファイルサーバーを自作。いっとき我が家にサーバーがとなったが、転送速度と維持費などの関係から既存のクラウドサービスの方が結果コスパがいいということになり廃止。（今は部屋のすみで熟睡中）文化祭で謎解きお化け屋敷を企画。準備期間が短かったが、謎解きフォームを１週間で制作。（フォーム中の動画から、お化け屋敷の最初に見てもらう動画も全て制作。）準備中に一人だけパソコンと睨めっこしていたため先生からさぼっとるみたいやなと若干引かれる。
             </p>
+            <video src="../assets/video/20thmybirthday.mp4" controls class="profile-history-video"></video>
         </div>
     </div>
     
