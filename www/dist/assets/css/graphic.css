@@ -6,6 +6,44 @@
   opacity: 1;
 }
 
+.graphic_frame_top {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+}
+
+.graphic_frame_bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+}
+
+.graphic_frame_left {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  opacity: 1;
+  height: 100%;
+  width: 12%;
+}
+
+.graphic_frame_right {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+  opacity: 1;
+  height: 100%;
+  width: 12%;
+}
+
 .graphic_src {
   position: relative;
   object-fit: cover;
