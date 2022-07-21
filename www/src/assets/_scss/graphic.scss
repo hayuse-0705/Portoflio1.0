@@ -3,7 +3,7 @@
     top: 0%;
     left: 0%;
     z-index: -2;
-    opacity: 1;
+    opacity: 0;
 }
 .graphic_frame_top{
     position: absolute;
@@ -15,7 +15,7 @@
 }
 .graphic_frame_bottom{
     position: absolute;
-    bottom: 0%;
+    bottom: 3%;
     left: 0%;
     z-index: 1;
     opacity: 1;
@@ -27,8 +27,8 @@
     left: 0%;
     z-index: 1;
     opacity: 1;
-    height: 100%;
-    width: 12%;
+    height: 97%;
+    width: 11.8%;
 }
 .graphic_frame_right{
     position: absolute;
@@ -36,8 +36,8 @@
     right: 0%;
     z-index: 1;
     opacity: 1;
-    height: 100%;
-    width: 12%;
+    height: 97%;
+    width: 11.8%;
 }
 .graphic_src{
     position: relative;
@@ -55,37 +55,129 @@
     overflow:auto;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-
     // box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
 }
+
+.graphic-item-frame::after{
+    content: '↓';
+    font-size: 2rem;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    color: rgba(230,230,230,1);
+    transform: translateY(-50%);
+    animation-name: scroll-anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.graphic-item-frame::before{
+    content: 'Scroll';
+    font-size: 1rem;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    letter-spacing:  3px;
+    color: rgba(230,230,230,1);
+    transform:translateY(-200%) translateX(-20%);
+    animation-name: scroll-anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-anime{
+    0%{
+        top: 40%;
+        opacity:0;
+    }
+    50%{
+        top: 50%;
+        opacity:1;
+    }
+    100%{
+        top: 60%;
+        opacity: 0;
+    }
+}
+
 .graphic-item-detail{
-    margin-top: 150px;
-    border: 5px solid #fff;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2),2px 2px 5px rgba(0,0,0,0.2) inset;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 10px;
+    z-index: 100;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 10px 10px 10px; 
+    width: 40%;
+    top: 0;
+    left: 60%;
+    transform: translateX(100%);
+    transition: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 1px solid #fff;
+
     p{
         margin: 30px 0;
     } 
 }
+.graphic-item-detail:hover{
+    transform: translateX(0);
+}
 .graphic-item-detail::before{
-    content : 'Details';
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    content : '←';
+    background-color: #fff;
+    height:100px;
+    width: 40px;
     font-weight: bold;
-    font-size: 3rem;
-
+    font-size: 1rem;
+    position: absolute;
+    left: 2px;
+    transform: translateX(-100%);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graphic-item-detail:hover::before{
+    box-shadow: -4px 0 5px rgba(0, 0, 0, 0) inset;
+}
+.graphic-item-detail:after{
+    position: absolute;
+    bottom: 30px;
+    width: 10px;
+    height: 100px;
+    background: transparent;
+    box-shadow: -20px 5px 20px rgba(0,0,0,0.2);
+    content: "";
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-200%);
 }
 .graphic_src_frame{
     width: 77%;
     height: 82%;
     overflow: auto;
     position:absolute;
-    top: 5%;
+    top: 4%;
     left: 50%;
     transform: translateX(-50%);
+}
+.graphic_pop_window_wrapp{
+    width: 80%;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform:translateX(-50%);
+    overflow:hidden;
+    z-index: 10;
+}
+.graphic_pop_window_wrapp::after{
+    position: absolute;
+    bottom: 30px;
+    width: 5px;
+    height: 100%;
+    background: transparent;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    content: "";
+    z-index: 100;
+    top: 0px;
+    right: 0%;
 }
 .mockup_part_1{
     position: absolute;
