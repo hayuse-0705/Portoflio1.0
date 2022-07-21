@@ -196,8 +196,8 @@
     width: 70%;
     margin: 0 auto;
     display: flex;
-    gap: 50px;
-    justify-content: space-between;
+    gap: 200px;
+    justify-content: center;
     align-items: center;
 }
 .mi-com-svg{
@@ -351,4 +351,9 @@
         background-color: rgb(0,0,0);
         color: #fff;
     }
+}
+.server{
+    position: absolute;
+    width: 130px;
+    transform: translateY(-50%) translateX(100%);
 }

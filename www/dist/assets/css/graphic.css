@@ -48,7 +48,7 @@
   position: relative;
   object-fit: cover;
   width: 100%;
-  top: 10px;
+  top: -2px;
   left: 0%;
   overflow: auto;
 }
@@ -61,6 +61,27 @@
   overflow: auto;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
+}
+
+.graphic-item-detail {
+  margin-top: 150px;
+  border: 5px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+}
+.graphic-item-detail p {
+  margin: 30px 0;
+}
+
+.graphic-item-detail::before {
+  content: "Details";
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .graphic_src_frame {
@@ -106,4 +127,75 @@
   transform: translateX(-50%);
   border-radius: 0px 0px 30px 30px;
   background: linear-gradient(#888, #333);
+}
+
+.graphic-item-text {
+  width: 50%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  position: relative;
+  border: 5px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
+  padding: 30px 30px;
+  padding-top: 80px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.graphic-item-text::before {
+  content: "Point";
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.back_video {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.graphic_a4_src_frame {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.graphic_a4_src_frame::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 150px;
+  height: 30px;
+  background-color: rgba(125, 125, 0, 0.8);
+  transform: rotate(-45deg) translateX(-30%) translateY(-100%);
+  z-index: 100;
+}
+
+.graphic_a4_src_frame::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 150px;
+  height: 30px;
+  background-color: rgba(125, 125, 0, 0.8);
+  transform: rotate(45deg) translateX(30%) translateY(-100%);
+  z-index: 100;
+}
+
+.graphic-item-frame {
+  padding-bottom: 20px;
 }
