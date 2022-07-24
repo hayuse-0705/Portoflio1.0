@@ -74,10 +74,10 @@ $("a").on('click',function(event){
   }
   setTimeout(action,1000);
 });
-
+var page_path = $("#gallery-back-video").attr("src");
 $(".video-start").hover(
   function(){
-    $("#gallery-back-video").attr("src","./assets/video/videos.mp4");
+    $("#gallery-back-video").attr("src", page_path + "/assets/video/videos.mp4");
   },
   function(){
     $("#gallery-back-video").attr("src","");
@@ -85,9 +85,37 @@ $(".video-start").hover(
 );
 $(".graphic-start").hover(
   function(){
-    $("#gallery-back-video").attr("src","./assets/video/graphic.mp4");
+    $("#gallery-back-video").attr("src",page_path + "/assets/video/graphic.mp4");
   },
   function(){
     $("#gallery-back-video").attr("src","");
   }
 );
+
+$(".gallery_nav").hover(
+  function(){
+    // $(".sub_menu_item").addClass("sub_open");
+    $(".sub_menu_item").css("transform","translateY(0%)")
+  },
+  function(){
+    $(".sub_menu_item").css("transform","translateY(-200%)")
+    // $(".sub_menu_item").removeClass("sub_open");
+  }
+);
+
+$(".detail_text").hover(
+   function(){
+    $(".back_video_src").attr("src","../assets/video/detail.mp4")
+   },
+   function(){
+    $(".back_video_src").attr("src","")
+   }
+)
+$(".point_text").hover(
+  function(){
+   $(".back_video_src").attr("src","../assets/video/point.mp4")
+  },
+  function(){
+   $(".back_video_src").attr("src","")
+  }
+)

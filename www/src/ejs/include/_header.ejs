@@ -34,12 +34,19 @@
             <span class="hum_bot"></span>
         </div>
         <div class="menu">
-            <ul>
+            <ul class="main_menu">
                 <li><a href="<%= meta.sorcePath %>/index.html">Home</a></li>
-                <li><a href="<%= meta.sorcePath %>/gallery_select.html">Gallery</a></li>
+                <li class="gallery_nav"><a href="<%= meta.sorcePath %>/gallery_select.html">Gallery</a>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item graphic-start"><a href="<%= meta.sorcePath %>/subdirectory/graphics.html">Graphics</a></li>
+                        <li class="sub_menu_item video-start"><a href="<%= meta.sorcePath %>/subdirectory/video.html">Videos</a></li>
+                    </ul>
+                </li>
                 <li><a href="<%= meta.sorcePath %>/subdirectory/project.html">Project</a></li>
                 <li><a href="<%= meta.sorcePath %>/subdirectory/profile.html">Profile</a></li>
-                <li><a href="<%= meta.sorcePath %>/index.html">Contact</a></li>
             </ul>
         </div>
     </header>
+    <div class="header_back_video_area">
+        <video id="gallery-back-video" src="<%= meta.sorcePath %>" muted autoplay loop></video>
+    </div>

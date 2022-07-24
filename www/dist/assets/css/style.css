@@ -209,23 +209,23 @@ body {
   opacity: 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
 }
-.menu ul {
+.menu .main_menu {
   margin: 0;
   padding: 0;
   position: relative;
   display: flex;
   gap: 20px;
 }
-.menu ul li {
+.menu .main_menu li {
   letter-spacing: 5px;
 }
-.menu ul li a {
+.menu .main_menu li a {
   color: #fff;
   font-weight: bold;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
-.menu ul li a:hover {
+.menu .main_menu li a:hover {
   color: #5f5f5f;
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -237,13 +237,83 @@ body {
   border-radius: 2px;
 }
 
+.sub_menu {
+  display: block;
+  position: absolute;
+  padding: 0%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.sub_menu .sub_menu_item {
+  text-align: left;
+  position: relative;
+  transform: translateY(-200%);
+  transition: 0.3s;
+}
+.sub_menu .sub_menu_item a {
+  text-align: left;
+}
+
+.sub_menu::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  width: 90%;
+  height: 40%;
+  z-index: -2;
+  left: 0%;
+  top: 0%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  animation-name: random_shadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: translateY(-100%);
+}
+
+@keyframes random_shadow {
+  0% {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0);
+  }
+  20% {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  }
+  30% {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0);
+  }
+  80% {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0);
+  }
+}
+.gallery_nav {
+  z-index: 100;
+}
+
+.sub_open {
+  transform: translateY(0%);
+}
+
+.header_back_video_area {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  outline: none;
+  border: none;
+}
+
 #gallery-back-video {
   height: 100vh;
-  width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   outline: none;
   border: none;
   background-color: #fff;

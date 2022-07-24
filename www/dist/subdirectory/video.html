@@ -32,16 +32,23 @@
             <span class="hum_bot"></span>
         </div>
         <div class="menu">
-            <ul>
+            <ul class="main_menu">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../gallery_select.html">Gallery</a></li>
+                <li class="gallery_nav"><a href="../gallery_select.html">Gallery</a>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item graphic-start"><a href="../subdirectory/graphics.html">Graphics</a></li>
+                        <li class="sub_menu_item video-start"><a href="../subdirectory/video.html">Videos</a></li>
+                    </ul>
+                </li>
                 <li><a href="../subdirectory/project.html">Project</a></li>
                 <li><a href="../subdirectory/profile.html">Profile</a></li>
-                <li><a href="../index.html">Contact</a></li>
             </ul>
         </div>
     </header>
-<div id="video-visual">
+    <div class="header_back_video_area">
+        <video id="gallery-back-video" src=".." muted autoplay loop></video>
+    </div>
+<section id="video-visual">
     <div class="slider-for">
         <div class="slide-item">
             
@@ -210,9 +217,9 @@
             </div>
         </div>
     </div>
-    </div>
+    </section>
     <div class="slider-nav">
-        <divi>1</divi>
+        <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
@@ -223,8 +230,9 @@
         <div>9</div>
         <div>10</div>
         <div>11</div>
+        <div>12</div>
     </div>
-</div>
+</section>
 
         <footer>
 
