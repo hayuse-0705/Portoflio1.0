@@ -5,6 +5,7 @@
 @import url("./project.css");
 @import url("./profile.css");
 @import url("./gallery.css");
+@import url("./pop_up.css");
 html {
   scroll-behavior: smooth;
 }

@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.page{
+	margin: 0 5%;
+	text-align: center;
+	background-color: #E7E7E7;
+	width: 90%;
+	height: 800px;
+	margin-top: 50px;
+}
+
+.page .title{
+	padding-top: 20%;
+	font-size: 5rem;
+}
+
+.page .sub_title{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: left;
+	border-bottom: solid 2px #000000;
+	padding-top: 50px;
+	font-size: 2.75rem;
+}
+.p2{
+	margin-top: 50px;
+	font-size: 2rem;
+	margin-left: 2%;
+}
+.p2_wrapper{
+	justify-content: space-around;
+	display: flex;
+}
+.big_font{
+	font-size: 3rem;
+	text-align: center;
+}
+.p6{
+	font-size: 2.3rem;
+}
+.hp_lnk{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+.hp_lnk:hover{
+	opacity: 0.7;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.6);
+}
+.grid{
+	display: grid;
+	gap:10px;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 10%;
+}
+.last{
+	margin: 0 20%;
+}
+ul.last li{
+	margin-bottom: 50px;
+	font-size: 2rem;
+	text-align: left;
+}
+.hp a{
+	text-decoration: none;
+	color: black;
+	background-color: #A6A6A6;
+	font-size: 2rem;
+	width: 300px;
+	padding: 10px;
+}
+.box p{
+}
+.transition{
+	font-size: 5rem;
+	border-bottom: 2px solid #000000;
+	transition: all 0.3s;
+	width: 500px;
+}
+.transition:hover{
+	letter-spacing: 10px;
+	cursor: pointer;
+}
+.nothing{
+	font-size: 5rem;
+	border-bottom: 2px solid #000000;
+	width: 500px;
+}
+.nothing:hover{
+	letter-spacing: 10px;
+	cursor: pointer;
+}
+.flex_wrapper{
+	justify-content: space-around;
+	display: flex;
+}
+.flex_wrapper img{
+	margin-top: 20px;
+}
+.box{
+	padding: 20px;
+	border: 2px #000000 solid;
+	width: 500px;
+}
+.bezier a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 2rem;
+}
+.square{
+	margin-top: 80px;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	transition: all 1s cubic-bezier(.73,0,.38,1.01);
+}
+.square_2{
+	margin-top: 80px;
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	transition: all 1s cubic-bezier(0,.99,.71,1.02);
+}
+#trigger{
+	display: none;
+	
+}
+#trigger:checked ~ label .square_2{
+	transform: translateX(-300px);
+}
+#trigger_1{
+	display: none;
+}
+#trigger_1:checked ~ label .square{
+	transform: translateX(-300px);
+}
+/* CSS Document */
+

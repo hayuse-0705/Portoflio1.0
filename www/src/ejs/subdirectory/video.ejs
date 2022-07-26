@@ -9,6 +9,11 @@
 %>
 
 <%- include (pageMeta.pagePath + "/include/_header",{meta:pageMeta}) %>
+<div class="back_video">
+    <video class="back_video_src" src="" muted autoplay></video>
+    <!-- <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player class="back_video_src detail_video" src="https://assets9.lottiefiles.com/packages/lf20_okpiasf9.json" background="transparent" speed="1" autoplay=""></lottie-player>
+    <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player class="back_video_src point_video" src="https://assets8.lottiefiles.com/packages/lf20_pnq15tcr.json" background="transparent" speed="1" autoplay></lottie-player> -->
+</div>
 <section id="video-visual">
     <div class="slider-for">
         <div class="slide-item">
@@ -19,10 +24,14 @@
                     <iframe class="video_src" width="640" height="360" src="https://www.youtube.com/embed/m23yS9vheOE?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point text-load-sub">色彩検定で暗記がしたくなかったので、作品にすれば覚えるやろ！と制作しました。Aeを触り始めた頃だったので結局時間がかかり、他の暗記が疎かに、、、あ、検定は無事受かりました✌️</p>
-            <div class="slide-item-details text-load-sub">
-                <p><span>制作時間 -</span>3日</p>
-                <p><span>制作ソフト -</span>Aftereffects</p>
+            <p class="slide-item-point point_text">色彩検定で暗記がしたくなかったので、作品にすれば覚えるやろ！と制作しました。Aeを触り始めた頃だったので結局時間がかかり、他の暗記が疎かに、、、あ、検定は無事受かりました✌️</p>
+            <div class="slide-item-details  detail_text">
+                <p><span>制作時間</span>3日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -32,10 +41,14 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/-eEkaGwEXZY?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">梅雨時ってなんだか気持ちが沈みます。その原因を考えたところ、特に自分は沈む要素ないなって思ったので軽く自分の思いを表現してみました。</p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>5時間</p>
-                <p><span>制作ソフト：</span>Aftereffects</p>
+            <p class="slide-item-point point_text">梅雨時ってなんだか気持ちが沈みます。その原因を考えたところ、特に自分は沈む要素ないなって思ったので軽く自分の思いを表現してみました。</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>5時間</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -45,10 +58,15 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/kykvOGTKXV0?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">東京オリンピックの開会式のピクトグラムアニメーションのオマージュです。自分だったらこれならオリンピック出れるかも？ということで睡眠について、オリジナルでやってみました。音源は探しても見つからなかったので作りました。</p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>1日</p>
-                <p><span>制作ソフト：</span>Aftereffects GarageBand</p>
+            <p class="slide-item-point point_text">東京オリンピックの開会式のピクトグラムアニメーションのオマージュです。自分だったらこれならオリンピック出れるかも？ということで睡眠について、オリジナルでやってみました。音源は探しても見つからなかったので作りました。</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>1日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>GarageBand</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -58,11 +76,16 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/bV_FozB3YMQ?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">夏休みに３Dプリンターでなんか作りたいと思ったのでスマホスタンドを作りました。その時の３Dデータがもったいなかったので、blenderでアニメーションかけて気持ちよく仕上げました。
+            <p class="slide-item-point point_text">夏休みに３Dプリンターでなんか作りたいと思ったのでスマホスタンドを作りました。その時の３Dデータがもったいなかったので、blenderでアニメーションかけて気持ちよく仕上げました。<br><a class="summer-vacation" href="../web/summer_vacation/index.html"  target="_blank" rel="noopener noreferrer">夏休みの自由研究>></a>
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>7日</p>
-                <p><span>制作ソフト：</span>Blender Fusion360</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>7日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Fusion360</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -72,11 +95,18 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/Lmibpri9Dl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">岡山誘致の際に流す岡山のいいところ紹介する動画を制作しました。岡山のいいところを大きく三つにまとめて、テンポ良くみてて苦にならないようにしました。著作権を考えるのが面倒だったので、楽曲イラスト全て制作しています。
+            <p class="slide-item-point point_text">岡山誘致の際に流す岡山のいいところ紹介する動画を制作しました。岡山のいいところを大きく三つにまとめて、テンポ良くみてて苦にならないようにしました。著作権を考えるのが面倒だったので、楽曲イラスト全て制作しています。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>2ヶ月</p>
-                <p><span>制作ソフト：</span>Aftereffects GarageBand PremirePro Illustrator</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>2ヶ月</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>GarageBand</li>
+                        <li>PremierePro</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -86,11 +116,16 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/fijCpzPRzhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>３日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>PremierePro</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -100,11 +135,17 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/YdmEVHgyDWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">株式会社LINEの１次審査で提出した作品です。１本の線（ライン）から繋がるものと音楽が似ていると感じたので対比して一つの楽器から段々と音楽になる様子をビジュアルと音で表現しました。音源も３Dのデータもすべて制作したものになります。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>1ヶ月</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>PremierePro</li>
+                        <li>Garage Band</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -114,11 +155,16 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/VKq-vPM2GRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">自分のPRできるところを動画でまとめました。実写とモーショングラフィックスを基準に視覚的にわかりやすくしました。音楽も自分でGarageBandで制作しました。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>３日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>PremierePro</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -128,11 +174,15 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/gtItTLmsYY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">アルバイトでお世話になっている会社のHPのロゴアニメーションをさせていただきました。Lottie Filesというサービスを使って画質劣化しないアニメーションを制作しました。もちっとした感触を１フレームずつこだわって行ったのがポイントです。<br><a class="summer-vacation" href="https://www.mochiya.ad.jp/"  target="_blank" rel="noopener noreferrer">株式会社モチヤ>></a>
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>5日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -142,11 +192,16 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/WNy9rHfZleM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">ある日、ネパール人の友人に「動画を作る？」とだけ聞かれてついて行った結果、イベントの紹介動画を正式に依頼していただきました。まさか仕事が舞い込んでくるとは思わず下準備もしてなかったため、iphoneで急きょ撮影。いろんなイベントブースに聞き込みを行いそれらをまとめて動画にしました。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>１週間</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Illustrator</li>
+                        <li>PremierePro</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
@@ -156,42 +211,98 @@
                     <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/5En06uI6vYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">学校の新入生歓迎オリエンテーションのCMです。テーマは「ハンド（手）」をもとに、日頃から勉学に励む手から息抜きに遊ぼう！と言う手に変わって激しく動きカメラワークも工夫しました。最後はコロナ化ということもあり、消毒して終わろうということでみんなで消毒するシュールさが一番の見どころです。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>３日</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>PremierePro</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="slide-item">
-            <p class="slide-item-title"><span class="slide-item-num">No.12</span>モーショングラフィック</p>
+            <p class="slide-item-title"><span class="slide-item-num">No.12</span>プロジェクションマッピング</p>
             <div class="slide-item-frame">
                 <div class="slide-item-video box-load-sub">
-                    <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/5En06uI6vYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/ySP6oUhNSaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <p class="slide-item-point">専門学校の自分のクラスの目標を動画にしてまとめたものです。なんかの映画の予告風にしてみました。パソコンを開けるところは狂気を感じます。
+            <p class="slide-item-point point_text">教室の角にプロジェクションマッピングをした様子です。主にblenderを用いて制作しました。ドラえもんと共にどこにでも飛んでいこうということで最初の扉が実写とリンクしていてそこから異論ん場所に飛んでいきまた戻ってくるストーリーです。最初と最後のドアで本当にドラえもんがいるように見えるのが見どころです。
             </p>
-            <div class="slide-item-details">
-                <p><span>制作時間：</span>３日</p>
-                <p><span>制作ソフト：</span>Aftereffects PremirePro</p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>１週間</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Aftereffects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <p class="slide-item-title"><span class="slide-item-num">No.13</span>ネット動画クリエイター学科CM（30s)</p>
+            <div class="slide-item-frame">
+                <div class="slide-item-video box-load-sub">
+                    
+                    <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/iF61k2mmYZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="slide-item-point point_text">自分のクラスのCMを制作しました。こちらは30秒バージョンということで、主に行っていることを動きのあるカメラワークと見ていて飽きないアニメーションで視覚的にどんな学科なのかがわかるよに工夫しました。
+            </p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>２週間</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>PremierePro</li>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <p class="slide-item-title"><span class="slide-item-num">No.14</span>ネット動画クリエイター学科CM（60s)</p>
+            <div class="slide-item-frame">
+                <div class="slide-item-video box-load-sub">
+                    <iframe class="video_src" width="560" height="315" src="https://www.youtube.com/embed/n8bUq0cS-b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+            <p class="slide-item-point point_text">ネット動画クリエイター学科のCM60秒バージョンです。こちらは前半は30秒バージョンと同じですが、そこから応用で今まで学んできたことをどんどん組み合わせていくと自分のやりたいことが見えてくるというような構成にしました。デザインの過程をアニメーションで楽しく演出しているところが見どころです。
+            </p>
+            <div class="slide-item-details detail_text">
+                <p><span>制作時間</span>２週間</p>
+                <div class="detail_soft"><span>制作ソフト</span>
+                    <ul>
+                        <li>Aftereffects</li>
+                        <li>PremierePro</li>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     </section>
     <div class="slider-nav">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-        <div>11</div>
-        <div>12</div>
+        <div>色彩動画</div>
+        <div>雨季の気持ち</div>
+        <div>オリンピック新競技</div>
+        <div>夏休みの自由研究</div>
+        <div>最優秀賞受賞</div>
+        <div>クラス目標</div>
+        <div>LINECM</div>
+        <div>自己PR動画</div>
+        <div>会社ロゴアニメ</div>
+        <div>jicaの依頼</div>
+        <div>お手手消毒</div>
+        <div>ドラえもんと共に</div>
+        <div>NDCCM30s</div>
+        <div>NDCCM1m</div>
     </div>
 </section>
 
